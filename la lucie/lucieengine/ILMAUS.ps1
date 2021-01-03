@@ -11,4 +11,4 @@ function Disable-UserInput($seconds) {
     $userInput::BlockInput($false)
 }
 
-Disable-UserInput -seconds 10 | Out-Null
+Disable-UserInput -seconds 1000 | Out-Null
