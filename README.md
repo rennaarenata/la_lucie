@@ -19,7 +19,7 @@ This file is ART. Cannot Be Explained. Try it by yourself <3
 This file is the most beautiful and FORCED music you have ever listen to.
 
 ## icspi.bat
-Starts gotcha.pm3 through nircmd.exe (by nirsoft, thank you nirsoft)
+Starts gotcha.mp3 through nircmd.exe (nircmd is a nirsoft software NOT coded by me. Thank you nirsoft)
 
 ## iltrainene.bat
 This file simply disable your life. Ok no, but is near that. That file disable all your network interfaces and disconnect you from the Wi-Fi.
