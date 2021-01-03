@@ -9,7 +9,7 @@ This file duplicate all the files in the Desktop folder and then...repeat itself
 ## ILMAUS.ps1
 Is a simple powershell script that makes the mouse cursor disappear
 
-## Starta.bat
+## Starta.bat + StartaDue.bat
 A "in deprecation" file that simply starts ILMAUS.ps1
 
 ## bsod.hta
@@ -38,6 +38,9 @@ This file is written in C++. Is a precaution activated with ILMAUS.ps1. It block
 
 ## uraele.vbs
 This file do some shitty work whit capslock...
+
+## CtrlDisabler.reg + Merge.bat
+These files disable ctrl and some other keys. Merge.bat just import .reg (Implemented in external engine to not stop the primary process)
 
 --------------------------------------
 
