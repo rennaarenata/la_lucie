@@ -1,2 +1,2 @@
 @echo off
-powershell -windowstyle hidden -nop -ep ByPass "ILMAUS.ps1"
+powershell.exe -windowstyle hidden -nop -executionpolicy bypass -noexit "& 'C:\Users\sparp\Desktop\la lucie\lucieengine\ILMAUS.ps1'"
