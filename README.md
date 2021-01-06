@@ -1,13 +1,13 @@
 ## La lucie
-La lucie is basically the worst project that you have ever seen, written in batch, vbs, ps1, c++.
-The main file is "la LUCIE.bat". That file calls the others as functions. (This is batch lol)
+La lucie is basically the worst project that you have ever seen, written in batch, vbs, ps1, c++.__
+The main file is "la LUCIE.bat". That file calls the others as functions. (This is batch lol)__
 We have totally 14 files.
 
 ## CHESUCIESO.bat
 This file duplicate all the files in the Desktop folder and then...repeat itself :)
 
 ## ILMAUS.ps1 (Combined with sera.exe)
-**ILMAUS.ps1:** Is a simple powershell script that makes the mouse cursor disappear
+**ILMAUS.ps1:** Is a simple powershell script that makes the mouse cursor disappear__
 **Sera.exe:** This file is written in C++. Is a precaution activated with ILMAUS.ps1. It blocks the mouse cursor in the centre of the monitor before ILMAUS make it disappear.
 
 ## Starta.bat + StartaDue.bat
