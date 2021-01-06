@@ -11,7 +11,7 @@ This file duplicate all the files in the Desktop folder and then...repeat itself
 **Sera.exe:** This file is written in C++. Is a precaution activated with ILMAUS.ps1. It blocks the mouse cursor in the centre of the monitor before ILMAUS make it disappear.
 
 ## Starta.bat + StartaDue.bat
-A "in deprecation" file that simply starts ILMAUS.ps1
+A "in deprecation" file that simply starts ILMAUS.ps1 (Implemented as external engine to not stop the execution of primary process)
 
 ## bsod.hta
 This file is ART. Cannot Be Explained. Try it by yourself <3
@@ -38,7 +38,7 @@ That file activates itself at the end of "la LUCIE.bat"'s payload. It simply "as
 This file do some shitty work whit capslock...
 
 ## CtrlDisabler.reg + Merge.bat
-These files disable ctrl and some other keys. Merge.bat just import .reg (Implemented in external engine to not stop the execution of primary process)
+These files disable ctrl and some other keys. Merge.bat just import .reg (Implemented as external engine to not stop the execution of primary process)
 
 --------------------------------------
 
