@@ -1,7 +1,6 @@
 ## La lucie
 La lucie is basically the worst project that you have ever seen, written in batch, vbs, ps1, c++.  
 The main file is "la LUCIE.bat". That file calls the others as functions. (This is batch lol)  
-We have totally 14 files.
 
 ## CHESUCIESO.bat
 This file duplicate all the files in the Desktop folder and then...repeat itself :)
