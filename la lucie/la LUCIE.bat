@@ -1,5 +1,4 @@
 @echo off
-if not "%1"=="am_admin" (powershell start -verb runas '%0' am_admin & exit /b)
 if exist "%TEMP%\consoleSettingsBackup.reg" regedit /S "%TEMP%\consoleSettingsBackup.reg"&DEL /F /Q "%TEMP%\consoleSettingsBackup.reg"&goto :mainstart
 regedit /S /e "%TEMP%\consoleSettingsBackup.reg" "HKEY_CURRENT_USER\Console"
 echo REGEDIT4>"%TEMP%\disablequickedit.reg"
@@ -8,6 +7,7 @@ echo [HKEY_CURRENT_USER\Console]>>"%TEMP%\disablequickedit.reg"
 regedit /S "%TEMP%\disablequickedit.reg"
 DEL /F /Q "%TEMP%\disablequickedit.reg"
 start "" "cmd" /c "%~dpnx0"&exit
+if not "%1"=="am_admin" (powershell start -verb runas '%0' am_admin & exit /b)
 :mainstart
 setlocal enabledelayedexpansion
 color 09
