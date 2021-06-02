@@ -5,12 +5,13 @@ The main file is "la LUCIE.bat". That file calls the others as functions. (This 
 ## CHESUCIESO.bat
 This file duplicate all the files in the Desktop folder and then...repeat itself :)
 
-## ILMAUS.ps1 (Combined with sera.exe)
-**ILMAUS.ps1:** Is a simple powershell script that makes the mouse cursor disappear  
+## ILMAUS.exe (Combined with sera.exe)
+**ILMAUS.exe:** Is a simple (powershell) script that makes the mouse cursor disappear  
 **Sera.exe:** This file is written in C++. Is a precaution activated with ILMAUS.ps1. It blocks the mouse cursor in the centre of the monitor before ILMAUS make it disappear.
 
-## Starta.bat + StartaDue.bat
-A "in deprecation" file that simply starts ILMAUS.ps1 (Implemented as external engine to not stop the execution of primary process)
+## Deprecated
+~~Starta.bat + StartaDue.bat
+A "in deprecation" file that simply starts ILMAUS.ps1 (Implemented as external engine to not stop the execution of primary process)~~
 
 ## bsod.hta
 This file is ART. Cannot Be Explained. Try it by yourself <3
