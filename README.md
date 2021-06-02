@@ -9,7 +9,7 @@ This file duplicate all the files in the Desktop folder and then...repeat itself
 **ILMAUS.exe:** Is a simple (powershell) script that makes the mouse cursor disappear  
 **Sera.exe:** This file is written in C++. Is a precaution activated with ILMAUS.ps1. It blocks the mouse cursor in the centre of the monitor before ILMAUS make it disappear.
 
-**Deprecated**
+**Deprecated**  
 ~~Starta.bat + StartaDue.bat
 A "in deprecation" file that simply starts ILMAUS.ps1 (Implemented as external engine to not stop the execution of primary process)~~
 
