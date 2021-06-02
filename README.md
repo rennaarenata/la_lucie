@@ -47,4 +47,4 @@ These files disable ctrl and some other keys. Merge.bat just import .reg (Implem
 
 ## This "Malware" is still being updated
 
-*Short description: Starting from the worst project that you ever seen; one of the funniest project that you ever seen!*
+*TL;DR: Starting from the worst project that you ever seen; the best that you ever seen! (e fa già ridere così)*
