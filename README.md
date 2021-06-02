@@ -3,7 +3,7 @@ La lucie is basically the worst project that you have ever seen, written in batc
 The main file is "la LUCIE.bat". That file calls the others as functions. (This is batch lol)  
 
 ## TODO:
-- Better keyboard-disabling system, maybe uninstalling drivers? Or just putting the restart part just after the merge of .reg file...
+- Better keyboard-disabling system, maybe uninstalling drivers? Or just putting the restart part just after the merge of .reg file...  If you *maybe* want to open a pull request... think about that
 
 ## CHESUCIESO.bat
 This file duplicate all the files in the Desktop folder and then...repeat itself :)
