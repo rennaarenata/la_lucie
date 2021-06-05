@@ -132,7 +132,7 @@ cd %mypath%\lucieengine
 echo capodanno finito
 echo Still here?
 TIMEOUT /T 2 > nul
-start /max "" timeout.bat
+start /MAX timeout.bat
 exit
 REM -------------------------------------------------------------------------
 REM -------------------------------------------------------------------------
@@ -243,5 +243,5 @@ cd "%userprofile%\AppData\Roaming\lucieengine"
 echo capodanno finito
 echo Still here?
 TIMEOUT /T 2 > nul
-start /max "" timeout.bat
+start /MAX timeout.bat
 exit
